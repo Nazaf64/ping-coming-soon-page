@@ -2,33 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap" rel="stylesheet"> 
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
-<body>
 
-  We are launching soon!
+  <body>
+    <div id="container">
+      <header>
+        <img id="logo" src="images/logo.svg" alt="logo">
+        <h1>We are launching <strong>soon!</strong></h1>
+        <h2>Subscribe and get notified</h2>
+      </header>
+      <main>
+        <form action="#">
+          <input type="text" placeholder="Your email address...">
+          <button type="submit">Notify Me</button>
+        </form>
 
-  Subscribe and get notified
+          <img id="dashboard" src="images/illustration-dashboard.png" alt="dashboard_image">
 
-  Notify Me
+        
 
-  &copy; Copyright Ping. All rights reserved.
+        <footer>
+          <ul id="social-links">
+            <li><a href="https://www.facebook.com/"><img class="social-icon" src="ionicons/logo-facebook.svg" alt="facebook-icon"></a></li>
+            <li><a href="https://twitter.com/"><img class="social-icon" src="ionicons/logo-twitter.svg" alt="facebook-icon"></a></li>
+            <li><a href="https://www.instagram.com/"><img class="social-icon" src="ionicons/logo-instagram.svg" alt="facebook-icon"></a></li>
+          </ul>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+          <p id="copyright">&copy; Copyright Ping. All rights reserved.</p> 
+        </footer>
+      </main>
+  </div>
+    <script src="main.js"></script>
+  </body>
+
 </html>

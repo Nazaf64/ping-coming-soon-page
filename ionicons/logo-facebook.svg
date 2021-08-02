@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="logo-facebook.svg"
+   id="svg837"
+   version="1.1"
+   viewBox="0 0 512 512"
+   class="ionicon">
+  <metadata
+     id="metadata843">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs841" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg837"
+     inkscape:window-maximized="1"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:cy="398.29035"
+     inkscape:cx="145.69235"
+     inkscape:zoom="1.2970564"
+     showgrid="false"
+     id="namedview839"
+     inkscape:window-height="855"
+     inkscape:window-width="1440"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
+  <title
+     id="title833">Logo Facebook</title>
+  <circle
+     style="fill:#4e7df3;fill-opacity:1;stroke:#ffffff;stroke-width:0.972968;stroke-opacity:1"
+     id="path839"
+     cx="243.75485"
+     cy="235.20779"
+     r="224.50682" />
+  <path
+     d="m 471.98643,234.35149 c 0,-124.76723 -101.85738,-225.932589 -227.47811,-225.932589 -125.62074,0 -227.478119,101.165359 -227.478119,225.932589 0,112.76456 83.171679,206.23407 191.934659,223.19919 V 299.68029 h -57.77334 v -65.3288 h 57.77334 v -49.77578 c 0,-56.61426 33.96939,-87.911976 85.92377,-87.911976 24.89057,0 50.92869,4.417786 50.92869,4.417786 v 55.60564 h -28.69881 c -28.2418,0 -37.07689,17.40891 -37.07689,35.30196 v 42.36237 h 63.08456 l -10.07404,65.3288 H 280.05177 V 457.57084 C 388.81475,440.61582 471.98643,347.1463 471.98643,234.35149 Z"
+     fill-rule="evenodd"
+     id="path835"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.01207;stroke-opacity:1" />
+</svg>
