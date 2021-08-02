@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 10 version
+*/
+
 :root{
     --border-radius: 50px;
     --blue: hsl(223, 87%, 63%);
@@ -18,9 +25,13 @@
 }
 
 body{
+    display: -ms-grid;
     display: grid;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     min-height: 100vh;
 }
 
@@ -106,6 +117,26 @@ form input.invalid{
     border: 1px solid var(--light-red);
 }
 
+::-webkit-input-placeholder {
+    color: var(--pale-blue);
+    opacity: 1; /* Firefox */
+  }
+
+::-moz-placeholder {
+    color: var(--pale-blue);
+    opacity: 1; /* Firefox */
+  }
+
+:-ms-input-placeholder {
+    color: var(--pale-blue);
+    opacity: 1; /* Firefox */
+  }
+
+::-ms-input-placeholder {
+    color: var(--pale-blue);
+    opacity: 1; /* Firefox */
+  }
+
 ::placeholder {
     color: var(--pale-blue);
     opacity: 1; /* Firefox */
@@ -153,12 +184,54 @@ li{
 }
 
 img.social-icon{
-    width: 1.8em;
+    width: 2em;
     padding: 0.4em;
+    margin: 0.4em;
     height: auto;
-    border: 0.5px solid var(--pale-blue);
+    border: 0.1px solid var(--pale-blue);
     border-radius: 50%;
 }
+
+svg{
+    width: 2em;
+    height: 2em;
+    padding: 0.7em;
+    margin: 0.4em;
+    /* height: auto; */
+    border: 0.1px solid var(--pale-blue);
+    border-radius: 50%;
+
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
+    background-position: center;
+}
+
+svg#facebook{
+    background-image: url("ionicons/logo-facebook1.svg");
+}
+
+svg#facebook:hover{
+    background-image: url("ionicons/logo-facebook-hover.svg");
+}
+
+svg#twitter{
+    background-image: url("ionicons/logo-twitter.svg");
+}
+
+svg#twitter:hover{
+    background-image: url("ionicons/logo-twitter-hover.svg");
+    background-color: var(--blue);
+}
+
+svg#instagram{
+    background-image: url("ionicons/logo-instagram.svg");
+}
+
+svg#instagram:hover{
+    background-image: url("ionicons/logo-instagram-hover.svg");
+    background-color: var(--blue);
+}
+
 
 p#copyright{
     color: var(--gray);

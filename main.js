@@ -2,18 +2,34 @@ const emailInput = document.getElementById("email");
 const btn = document.getElementById("btn");
 const errorMessage = document.getElementById("error");
 const mobileErrorMessage = document.getElementById("mobile_error");
+const social_icons = document.getElementsByClassName("social-icon");
 
-window.onresize = windowResized;
 
-function windowResized() {
-    // console.log(window.innerWidth);
-    return window.innerWidth;
-    // return windowWidth;
 
-    // if(windowWidth >= 850){
+// window.onresize = windowResized;
 
-    // }
+// function windowResized() {
+//     return window.innerWidth;
+// }
+
+for(i = 0; i < social_icons.length; i++){
+    social_icons[i].addEventListener("mouseover", (e)=> {
+        e.preventDefault;
+        hoverSocial(e.target);
+    })
 }
+
+function hoverSocial(icon) {
+    if(icon.src === "ionicons/logo-facebook.svg"){
+        icon.src = "ionicons/logo-facebook-hover.svg";
+    } else if (icon.src === "ionicons/logo-twitter.svg"){
+        icon.src = "ionicons/logo-twitter-hover.svg";
+    } else if (icon.src === "ionicons/logo-instagram.svg"){
+        icon.src = "ionicons/logo-instagram-hover.svg";
+    }
+    console.log(icon.src);
+}
+
 
 function ValidateEmail(mail) 
 {
@@ -24,9 +40,9 @@ function ValidateEmail(mail)
         return (false)
 }
 
-function emailSubmit() {
-    // var windowWidth = windowResized;    
 
+
+function emailSubmit() { 
     if (emailInput.value === ''){
         errorMessage.innerText = "Please fill in this field";
         mobileErrorMessage.innerText = "Please fill in this field";
@@ -40,20 +56,21 @@ function emailSubmit() {
 
         } else {
             errorMessage.innerText = "";
+            mobileErrorMessage.innerText = "";
+            emailInput.className = "email";
         }
     } 
-    // else if (emailInput.value === '' && windowWidth < 850) {
-    //     mobileErrorMessage.innerText = "Please fill in this field";
-    //     emailInput.className = "invalid";
-    // } else if (emailInput.value != '' && windowWidth < 850) {
-    //     var logic = ValidateEmail(emailInput.value);
-    //     if(logic == false) {
-    //         mobileErrorMessage.innerText = "Please provide a valid email address";
-    //         emailInput.className = "invalid";
-    // }
+}
+
+function clearFields() {
+        emailInput.value = '';
 }
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
     emailSubmit();
 })
+
+window.onload = function () {
+    clearFields()
+}
