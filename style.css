@@ -24,7 +24,7 @@
     color: black;
 }
 
-body{
+/* body{
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -33,6 +33,11 @@ body{
     -ms-flex-line-pack: center;
         align-content: center;
     min-height: 100vh;
+} */
+
+body{
+    min-height: 100vh;
+    margin: 0 auto;
 }
 
 #container{
